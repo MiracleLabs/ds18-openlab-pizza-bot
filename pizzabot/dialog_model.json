@@ -1,0 +1,443 @@
+{
+  "luis_schema_version": "3.1.0",
+  "versionId": "0.1",
+  "name": "Pizzabot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Capabilities"
+    },
+    {
+      "name": "CrustTypes"
+    },
+    {
+      "name": "customizeoptions"
+    },
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "Non Veg"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "pizza type"
+    },
+    {
+      "name": "PizzaCount"
+    },
+    {
+      "name": "pizzasize"
+    },
+    {
+      "name": "Thank you"
+    },
+    {
+      "name": "Veg"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Crust Type",
+      "roles": []
+    },
+    {
+      "name": "CrustVarieties",
+      "children": [
+        "Thin Crust",
+        "FlatBread",
+        "Sicilian Style",
+        "Neapolitan Crust"
+      ],
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "number",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "1",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "2",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "3",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "3 peices",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "3 pieces",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "4",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "4 pieces",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "4peices",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "5",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "5 peices",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "6",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "7",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "8",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "9",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+    {
+      "text": "bye",
+      "intent": "Thank you",
+      "entities": []
+    },
+    {
+      "text": "chicken tikka",
+      "intent": "pizza type",
+      "entities": []
+    },
+    {
+      "text": "crust type",
+      "intent": "customizeoptions",
+      "entities": [
+        {
+          "entity": "Crust Type",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "crust type is thin crust",
+      "intent": "CrustTypes",
+      "entities": [
+        {
+          "entity": "Crust Type",
+          "startPos": 0,
+          "endPos": 9
+        },
+        {
+          "entity": "CrustVarieties::Thin Crust",
+          "startPos": 14,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "flatbread",
+      "intent": "CrustTypes",
+      "entities": [
+        {
+          "entity": "CrustVarieties::FlatBread",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "get me crust type sicilian style",
+      "intent": "CrustTypes",
+      "entities": [
+        {
+          "entity": "Crust Type",
+          "startPos": 7,
+          "endPos": 16
+        },
+        {
+          "entity": "CrustVarieties::Sicilian Style",
+          "startPos": 18,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "i want 5 pieces",
+      "intent": "PizzaCount",
+      "entities": []
+    },
+ 
+    {
+      "text": "i want crust type",
+      "intent": "customizeoptions",
+      "entities": [
+        {
+          "entity": "Crust Type",
+          "startPos": 7,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "i want flatbread as crust type",
+      "intent": "CrustTypes",
+      "entities": [
+        {
+          "entity": "CrustVarieties::FlatBread",
+          "startPos": 7,
+          "endPos": 15
+        },
+        {
+          "entity": "Crust Type",
+          "startPos": 20,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "i want neapolitan crust as crust type",
+      "intent": "CrustTypes",
+      "entities": [
+        {
+          "entity": "CrustVarieties::Neapolitan Crust",
+          "startPos": 7,
+          "endPos": 22
+        },
+        {
+          "entity": "Crust Type",
+          "startPos": 27,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "i want non veg pizza",
+      "intent": "Non Veg",
+      "entities": []
+    },
+
+    {
+      "intent": "customizeoptions",
+      "entities": [
+        {
+           
+          "startPos": 7,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "i want veg pizza",
+      "intent": "Veg",
+      "entities": []
+    },
+    {
+      "text": "large - 8 slices",
+      "intent": "pizzasize",
+      "entities": []
+    },
+    {
+      "text": "large 10slices",
+      "intent": "pizzasize",
+      "entities": []
+    },
+    {
+      "text": "large 8 slices",
+      "intent": "pizzasize",
+      "entities": []
+    },
+    {
+      "text": "mediterranean pizza",
+      "intent": "pizza type",
+      "entities": []
+    },
+    {
+      "text": "medium 6 slices",
+      "intent": "pizzasize",
+      "entities": []
+    },
+    {
+      "text": "medium -6- slices",
+      "intent": "pizzasize",
+      "entities": []
+    },
+    {
+      "text": "medium 8slices",
+      "intent": "pizzasize",
+      "entities": []
+    },
+    {
+      "text": "neapolitan crust",
+      "intent": "CrustTypes",
+      "entities": [
+        {
+          "entity": "CrustVarieties::Neapolitan Crust",
+          "startPos": 0,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "non veg",
+      "intent": "Non Veg",
+      "entities": []
+    },
+    {
+      "text": "non veg pizza",
+      "intent": "Non Veg",
+      "entities": []
+    },
+    {
+      "text": "nonveg",
+      "intent": "Non Veg",
+      "entities": []
+    },
+ 
+ 
+    {
+      "text": "pepper barbecue chicken",
+      "intent": "pizza type",
+      "entities": []
+    },
+    {
+      "text": "roman veg supreme",
+      "intent": "pizza type",
+      "entities": []
+    },
+    {
+      "text": "sicilian style",
+      "intent": "CrustTypes",
+      "entities": [
+        {
+          "entity": "CrustVarieties::Sicilian Style",
+          "startPos": 0,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "small - 4- slices",
+      "intent": "pizzasize",
+      "entities": []
+    },
+    {
+      "text": "small 4 slices",
+      "intent": "pizzasize",
+      "entities": []
+    },
+    {
+      "text": "small 6slices",
+      "intent": "pizzasize",
+      "entities": []
+    },
+    {
+      "text": "thank you",
+      "intent": "Thank you",
+      "entities": []
+    },
+    {
+      "text": "thanks",
+      "intent": "Thank you",
+      "entities": []
+    },
+    {
+      "text": "thin crust",
+      "intent": "CrustTypes",
+      "entities": [
+        {
+          "entity": "CrustVarieties::Thin Crust",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "intent": "customizeoptions",
+      "entities": [
+        {
+           
+          "startPos": 0,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "veg",
+      "intent": "Veg",
+      "entities": []
+    },
+    {
+      "text": "veg pizza",
+      "intent": "Veg",
+      "entities": []
+    },
+    {
+      "text": "what are your capabilities",
+      "intent": "Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what can you do",
+      "intent": "Capabilities",
+      "entities": []
+    }
+  ],
+  "settings": []
+}

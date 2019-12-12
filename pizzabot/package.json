@@ -1,0 +1,22 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.14.0",
+    "luis-sdk": "^1.0.1",
+    "moment": "^2.22.2",
+    "ping": "^0.2.2",
+    "restify": "^7.2.3"
+  },
+  "engines": {
+    "node": "8.10.0"
+  }
+}
